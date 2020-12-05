@@ -8,6 +8,7 @@ node('', {
               extensions: [],
               submoduleCfg: [],
               userRemoteConfigs: [[url: 'https://github.com/tendryll/sbdemo.git']]])
+    echo "path to workspace => ${env.WORKSPACE}"
     sh "${env.WORKSPACE}\\demo-pipeline\\mvnw.cmd clean build"
   }
 })
