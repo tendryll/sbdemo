@@ -1,6 +1,6 @@
 #!groovy
 
-node("any", {
+node('universal') {
   stage('Example') {
     if (env.BRANCH_NAME == 'master') {
       echo 'I only execute on the master branch'
@@ -8,4 +8,4 @@ node("any", {
       echo 'I execute elsewhere'
     }
   }
-})
+}
