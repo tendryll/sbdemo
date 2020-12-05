@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Ignore the pipeline.gdsl file
+src/main/groovy/pipeline.gdsl
