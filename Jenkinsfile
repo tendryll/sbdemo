@@ -11,6 +11,6 @@ node('', {
   }
   stage('build') {
     echo "path to workspace => ${env.WORKSPACE}"
-    sh "mvn clean build"
+    sh "mvn clean verify"
   }
 })
