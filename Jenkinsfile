@@ -2,6 +2,6 @@
 
 node('', {
   stage('build') {
-    "${env.WORKSPACE}/mvnw.exe clean build"
+    sh "${env.WORKSPACE}/mvnw.exe clean build"
   }
 })
