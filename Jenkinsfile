@@ -10,7 +10,9 @@ node('', {
               userRemoteConfigs: [[url: 'https://github.com/tendryll/sbdemo.git']]])
   }
   stage('build') {
-    echo "path to workspace => ${env.WORKSPACE}"
     sh "mvn clean verify"
+  }
+  stage('image') {
+    sh "docker build -t tendryll/sbdemo ."
   }
 })
