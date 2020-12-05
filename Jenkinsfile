@@ -8,6 +8,6 @@ node('', {
               extensions: [],
               submoduleCfg: [],
               userRemoteConfigs: [[url: 'https://github.com/tendryll/sbdemo.git']]])
-    sh "${env.WORKSPACE}/mvnw.exe clean build"
+    sh "${env.WORKSPACE}/mvnw.cmd clean build"
   }
 })
